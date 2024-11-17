@@ -2,8 +2,8 @@ using System.Diagnostics.Contracts;
 
 public class Prompts
 {
-    public string _prompt;
     public List<string> _prompts = new List<string>();
+
 
     public string PromptGenerator()
     {
@@ -12,8 +12,6 @@ public class Prompts
             Random rand = new Random();
             int index = rand.Next(_prompts.Count);
             return _prompts[index];
-
-
         }
         else
         {
