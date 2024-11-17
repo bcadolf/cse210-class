@@ -5,6 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        // the extra features is to assign to title to the journal and make that the filename. in addition the file saved is in json a far more common format. 
         int option = 0;
         Journal theJournal = new Journal();
         Console.Write("What do you want to call your journal? (One Word Please) ");
