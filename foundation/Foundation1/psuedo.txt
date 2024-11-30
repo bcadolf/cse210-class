@@ -1,0 +1,21 @@
+Video {
+    title: string
+    author: string
+    length (in sec): int
+    comments: list
+    ------------------------
+    Video(title: string, author: string, length: int, comments: Comment)
+
+    GetVideoData(): string
+    NumComments() : int
+    DisplayVideo() : void 
+}
+
+Comment {
+    username: string
+    commentText: string
+    ----------------------
+    Comment(username: string, text: string)
+
+    GetComment() : string
+}
