@@ -1,0 +1,47 @@
+Product {
+    name: string
+    productId: int
+    price: double
+    quantity: int
+    -------------------
+    Product(name: string, productId: int, price: double, quantity: int)
+
+    ComputeTotal(): double
+    GetProduct(): string
+}
+
+Customer {
+    name: string
+    address: Address
+    ------------------
+    Customer(name: string, address: Address)
+
+    CheckLocation(): bool
+    GetCustomer(): string
+}
+
+Address {
+    street: string
+    city: string
+    state/province: string
+    country: string
+    postalCode: int
+    locationUSA: bool
+    --------------------
+    Address(street: string, city: string, state/province: string, postalCode: int, country: string)
+
+    CheckCountry(): bool
+    GetAddress(): string
+}
+
+Order {
+    products: list<Product>
+    customer: Customer
+    ---------------------
+    Order(customer : Customer, products: list<Product>)
+
+    AddSubtotal(): int
+    CalulateShipping(): int
+    DisplayPackingLabel(): void
+    DisplayShippingLabel(): void
+}
