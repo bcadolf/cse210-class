@@ -1,0 +1,35 @@
+Activity {
+    _user: string
+    _description : string
+    _timeAlloted : int
+
+    StartingMessage() : void
+    EndingMessage() : void
+    Spinner(seconds _: int) : void
+    Countdown(second : int) : void
+}
+
+BreathingActivity{
+
+    Run() : void 
+}
+
+ReflectionActivity{
+    _prompts : List<string>
+    _questions : List<string>
+
+    Run() : void
+    GetRandomPrompt() : string
+    GetRandomQuestion() : string
+    DisplayPrompt() : void
+    DisplayQuestions() : void
+}
+
+ListingActivity {
+    _count : int
+    _prompts : List<string>
+
+    Run() : void
+    GetRandomPrompt() : string
+    GetListFromUser() : List<string>
+}
