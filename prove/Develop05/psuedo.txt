@@ -33,3 +33,6 @@ ListingActivity {
     GetRandomPrompt() : string
     GetListFromUser() : List<string>
 }
+
+additions, conolidated code on the reflection activity by merging the random getter by requiring list selection. 
+encapsulated and protected all functions that are not needed outside the classes the run function activates everything. 
